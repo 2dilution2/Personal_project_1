@@ -1,0 +1,39 @@
+@import url(normalize.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend&family=Lexend+Deca:wght@300&family=Lexend+Exa&family=Lexend+Giga:wght@200;300;400;600;700&family=Lexend+Mega:wght@600&display=swap');
+
+/* 레이아웃 */
+section{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 제목 위계 */
+body{
+    font-size: 40px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+.banner_tt{
+    font-size: 50px;
+    font-family: 'Lexend Exa' sans-serif;
+}
+.banner_hl{
+    font-size: 90px;
+    font-family: 'Lexend Mega', sans-serif; 
+    font-weight: 600;
+}
+.banner_samall{
+    font-size: 40px;
+}
+.bestSeller_tt{
+    font-size: 50px;
+}
+.head_tt{
+    font-family: 'Inter', sans-serif;
+}
+.footer_tt{
+    font-weight: 200;
+}
+.contact_us_tt{
+    font-weight: 300;
+}
