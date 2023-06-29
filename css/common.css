@@ -57,39 +57,40 @@ body {
 
 /* 헤더 */
 header {
+    position: relative;
     width: 1920px auto;
     flex-shrink: 0;
     padding: 5px;
     border-bottom: 1px solid gray;
 }
 
-.container{
+.container {
     width: 1280px;
     margin: 0 auto;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.header_list{
-    position: relative;
+.header_list {
     height: 116px;
 }
 
 .hd_page_tt {
-    flex-direction: row;
-    flex-shrink: 0;
+    position:absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    padding-left: 58px;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hd_page_tt a{
     padding-left: 58px;
-}
-
-.hd_member_tt{
-    position: absolute;
-    top: 0;
-    right: 8px;
-    text-align: center;
 }
 
 .hd_member_tt a{
@@ -99,3 +100,112 @@ header {
 body>header>hr{
     width: 1920px;
 }
+
+/* 베너 */
+.banner{
+    width: 1280px;
+    height: 600;
+}
+.material-symbols-outlined {
+    font-family: 'Material Icons Outlined';
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "Material Icons Outlined";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.25em;
+    text-transform: none;
+    line-height: 1;
+    content: attr(data-icon);
+    color: #000;
+  }
+  
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-prev:before {
+    content: "chevron_left";
+  }
+  
+  .slick-next {
+    right: 20px;
+  }
+  
+  .slick-next:before {
+    content: "chevron_right";
+  }
+
+  .slick-dots{
+    display: none;
+  }
+
+  .banner {
+    position: relative;
+  }
+  
+  .banner_tt_1 {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .banner_tt_2 {
+    position: absolute;
+    top: 30%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #000;
+  }
+
+  .banner_tt_3 {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+  }
+
+  /* features */
+  

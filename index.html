@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acoustic</title>
     <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.banner_slide').slick({
-                dots: true,
                 infinite: true,
                 speed: 500,
                 fade: true,
-                cssEase: 'linear'
+                cssEase: 'linear',
+                autoplay:true,
+                autoplaySpeed:1500
             });
             $('.best_seller_slide').slick({
                 infinite: true,
@@ -55,29 +59,27 @@
     <section class="banner">
         <ul class="banner_slide" style="font-family: 'Lexend Exa' sans-serif;">
             <li>
-                <p class="banner_tt">
+                <p class="banner_tt_1">
                     Feel <br> 
                     <span class="banner_hl">freedom</span>
                 </p>
                 <img src="img/banner1.jpg" alt="" width="1280px">
             </li>
             <li>
-                <p class="banner_tt">
+                <p class="banner_tt_2">
                     unleash <br> your <br> inner <br>
                     <span class="banner_hl">Artist</span>
                 </p>
                 <img src="img/banner2.jpg" alt="" width="1280px">
             </li>
             <li>
-                <p class="banner_tt">
+                <p class="banner_tt_3">
                     <span class="banner_hl">Awaken</span> <br> 
                     <span class="banner_small">your</span> <br> passion
                 </p>
                 <img src="img/banner3.jpg" alt="" width="1280px">
             </li>
         </ul>
-        <span class="material-symbols-outlined next-btn">chevron_left</span>
-        <span class="material-symbols-outlined prev-btn">chevron_right</span>
     </section>
     <section class="features">
         <ul class="feature_list">
