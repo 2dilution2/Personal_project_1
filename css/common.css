@@ -55,6 +55,18 @@ body {
     font-weight: 300;
 }
 
+.name {
+    font-size: 20px;
+}
+
+.spac_line{
+    font-size: 15px;
+}
+
+.price{
+    font-size: 30px;
+}
+
 /* 헤더 */
 header {
     position: relative;
@@ -62,15 +74,17 @@ header {
     flex-shrink: 0;
     padding: 5px;
     border-bottom: 1px solid gray;
+    align-items: center;
 }
 
 .container {
     width: 1280px;
     margin: 0 auto;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 5px;
 }
 
 .header_list {
@@ -78,7 +92,7 @@ header {
 }
 
 .hd_page_tt {
-    position:absolute;
+    position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -89,23 +103,24 @@ header {
     text-overflow: ellipsis;
 }
 
-.hd_page_tt a{
+.hd_page_tt a {
     padding-left: 58px;
 }
 
-.hd_member_tt a{
+.hd_member_tt a {
     padding-left: 43px;
 }
 
-body>header>hr{
+body>header>hr {
     width: 1920px;
 }
 
 /* 베너 */
-.banner{
+.banner {
     width: 1280px;
     height: 600;
 }
+
 .material-symbols-outlined {
     font-family: 'Material Icons Outlined';
     font-size: 24px;
@@ -115,10 +130,10 @@ body>header>hr{
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-  }
-  
-  .slick-prev,
-  .slick-next {
+}
+
+.slick-prev,
+.slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -133,16 +148,16 @@ body>header>hr{
     border: none;
     outline: none;
     background-color: transparent;
-  }
-  
-  .slick-prev:hover,
-  .slick-next:hover {
+}
+
+.slick-prev:hover,
+.slick-next:hover {
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
+}
+
+.slick-prev:before,
+.slick-next:before {
     font-family: "Material Icons Outlined";
     font-weight: normal;
     font-style: normal;
@@ -154,58 +169,163 @@ body>header>hr{
     line-height: 1;
     content: attr(data-icon);
     color: #000;
-  }
-  
-  .slick-prev {
+}
+
+.slick-prev {
     left: 20px;
-  }
-  
-  .slick-prev:before {
+}
+
+.slick-prev:before {
     content: "chevron_left";
-  }
-  
-  .slick-next {
+}
+
+.slick-next {
     right: 20px;
-  }
-  
-  .slick-next:before {
+}
+
+.slick-next:before {
     content: "chevron_right";
-  }
+}
 
-  .slick-dots{
+.slick-dots {
     display: none;
-  }
+}
 
-  .banner {
+.banner {
     position: relative;
-  }
-  
-  .banner_tt_1 {
+    padding-top: 63.5px;
+}
+
+.banner_tt_1 {
     position: absolute;
     top: 20%;
     left: 55%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: #fff;
-  }
+}
 
-  .banner_tt_2 {
+.banner_tt_2 {
     position: absolute;
     top: 30%;
     left: 83%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: #000;
-  }
+}
 
-  .banner_tt_3 {
+.banner_tt_3 {
     position: absolute;
     top: 30%;
     left: 70%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: #fff;
-  }
+}
 
-  /* features */
-  
+/* features */
+.features {
+    position: relative;
+    padding-top: 63.5px;
+}
+
+.feature_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature_list>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 615px;
+    height: 476px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature_list>li>p {
+    position: absolute;
+    bottom: 5%;
+    color: #fff;
+}
+
+.gradientOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
+
+.feature_list>li>img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* best seller */
+.bestSeller{
+    padding-top: 63.5px;
+}
+
+.best_seller_slide{
+    padding-top: 30px;
+}
+
+.name,
+.spac,
+.price{
+    padding-top: 15px;
+}
+
+.name{
+    line-height: 1;
+}
+
+.spac_line{
+    height: 150px;
+    margin-top: 15px;
+    padding-top: 15px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.spac_line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+}
+
+.bs_itemList>.thumbnail>a>img{
+    width: 420px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.price{
+    position: relative;
+}
+
+.price::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+}
+
+/* 이벤트 */
+.event{
+    padding-top: 63.5px;
+}
