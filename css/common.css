@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend&family=Lexend+Deca:wght@300&family=Lexend+Exa&family=Lexend+Giga:wght@200;300;400;600;700&family=Lexend+Mega:wght@600&display=swap');
 
 /* 레이아웃 */
-section {
+section,
+footer{
     width: 1280px;
     margin: 0 auto;
 }
@@ -48,10 +49,23 @@ body {
 }
 
 .footer_tt {
+    font-size: 20px;
     font-weight: 200;
 }
 
 .contact_us_tt {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.cs {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.num {
+    font-size: 30px;
+    font-family: Lexend Deca;
     font-weight: 300;
 }
 
@@ -59,11 +73,11 @@ body {
     font-size: 20px;
 }
 
-.spac_line{
+.spac_line {
     font-size: 15px;
 }
 
-.price{
+.price {
     font-size: 30px;
 }
 
@@ -223,6 +237,24 @@ body>header>hr {
     color: #fff;
 }
 
+.event_tt_1 {
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 26px;
+}
+
+.event_tt_2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.event_tt_3 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
 /* features */
 .features {
     position: relative;
@@ -269,25 +301,25 @@ body>header>hr {
 }
 
 /* best seller */
-.bestSeller{
+.bestSeller {
     padding-top: 63.5px;
 }
 
-.best_seller_slide{
+.best_seller_slide {
     padding-top: 30px;
 }
 
 .name,
 .spac,
-.price{
+.price {
     padding-top: 15px;
 }
 
-.name{
+.name {
     line-height: 1;
 }
 
-.spac_line{
+.spac_line {
     height: 150px;
     margin-top: 15px;
     padding-top: 15px;
@@ -305,13 +337,13 @@ body>header>hr {
     background-color: gray;
 }
 
-.bs_itemList>.thumbnail>a>img{
+.bs_itemList>.thumbnail>a>img {
     width: 420px;
     height: 420px;
     overflow: hidden;
 }
 
-.price{
+.price {
     position: relative;
 }
 
@@ -326,6 +358,49 @@ body>header>hr {
 }
 
 /* 이벤트 */
-.event{
-    padding-top: 63.5px;
+.event {
+    margin-top: 63.5px;
+    width: 1280px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #FBF1CE;
 }
+
+.event_tt {
+    text-align: left;
+    margin-left: 80px;
+
+}
+
+.eventImg {
+    position: absolute;
+    height: auto;
+    top: 85%;
+    right: -20.5%;
+    transform: translate(-50%, -50%);
+    size: 45%;
+}
+
+
+footer {
+    padding-top: 63.5px;
+    height: 267px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer_tt,
+.contact_us_tt {
+    float: left;
+}
+
+.cs, 
+.num { 
+    float: right;
+  }
+  
