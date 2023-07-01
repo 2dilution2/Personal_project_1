@@ -4,7 +4,7 @@
 
 /* 레이아웃 */
 section,
-footer{
+footer {
     width: 1280px;
     margin: 0 auto;
 }
@@ -48,7 +48,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.footer_tt {
+.footer_list {
     font-size: 20px;
     font-weight: 200;
 }
@@ -56,6 +56,7 @@ body {
 .contact_us_tt {
     font-size: 30px;
     font-weight: 300;
+    line-height: 38px;
 }
 
 .cs {
@@ -64,7 +65,7 @@ body {
 }
 
 .num {
-    font-size: 30px;
+    font-size: 50px;
     font-family: Lexend Deca;
     font-weight: 300;
 }
@@ -91,7 +92,7 @@ header {
     align-items: center;
 }
 
-.container {
+.container_h {
     width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -125,10 +126,50 @@ header {
     padding-left: 43px;
 }
 
-body>header>hr {
-    width: 1920px;
+/* footer */
+footer {
+    position: relative;
+    margin-top: 63.5px;
+    width: 1920px auto;
+    border-top: 1px solid gray;
+    padding: 5px;
+    align-items: center;
+    flex-shrink: 0;
 }
 
+.container_f {
+    margin-top: 15px;
+}
+
+.footer_list {
+    width: 1280px;
+    height: 267px;
+}
+
+.terms_f {
+    margin-right: 10px;
+}
+
+.contact_us_tt {
+    margin-left: 10px;
+}
+
+.footer_tt_1,
+.footer_tt_3 {
+    color: #979797;
+}
+
+.footer_tt_2 {
+    color: #505050;
+}
+
+.csnum {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+/* indexpage*/
 /* 베너 */
 .banner {
     width: 1280px;
@@ -384,23 +425,4 @@ body>header>hr {
     size: 45%;
 }
 
-
-footer {
-    padding-top: 63.5px;
-    height: 267px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer_tt,
-.contact_us_tt {
-    float: left;
-}
-
-.cs, 
-.num { 
-    float: right;
-  }
-  
+/* login page */
