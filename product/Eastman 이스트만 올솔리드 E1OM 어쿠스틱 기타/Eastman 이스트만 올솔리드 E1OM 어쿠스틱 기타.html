@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/common.css">
     <title>Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타</title>
+    <script>
+        // 모든 썸네일 이미지를 선택한다.
+        const thumbnails = document.querySelectorAll('.thumbImg');
+
+        // 썸네일 이미지에 마우스 오버 이벤트 리스너를 추가한다.
+        thumbnails.forEach((thumbnail) => {
+            thumbnail.addEventListener('mouseover', function () {
+                // 메인 이미지를 썸네일 이미지로 변경한다.
+                const mainImage = document.querySelector('.bigImg');
+                mainImage.src = this.src;
+
+                // 선택한 썸네일 이미지의 alt 속성을 메인 이미지의 alt 속성으로 변경한다.
+                mainImage.alt = this.alt;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -33,9 +49,8 @@
     </header>
     <section class="prod_header_desc">
         <div class="prod_img">
-            <div class="thumnail">
-                <img src="Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타_1.jpg" alt="Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타" class="bigImg">
-            </div>
+            <img src="Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타_1.jpg" alt="Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타" class="bigImg"
+                width="530px">
             <div class="img_list">
                 <ul>
                     <li>
@@ -54,54 +69,45 @@
             </div>
         </div>
         <div class="prod_desc">
-            <table>
-                <tr class="prod_name">
-                    <Strong>
-                        Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타
-                    </Strong>
-                </tr>
-                <tr>
-                    <td class="prod_spac">
-                        <ul>
-                            <li>Eastman의 엔트리급 올솔리드 모델</li>
-                            <li>OM 바디</li>
-                            <li>상판 : Solid Sitka Sprucer</li>
-                            <li>측후판 : Solid Sapelel</li>
-                            <li>지판 : Ebony</li>
-                            <li>44.5mm 너트, 빈티지 오픈기어 헤드머신</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="prod_info">
-                    <td>
-                        <ul>
-                            <li>
-                                원산지 해외
-                                브랜드 Eastman
-                                모델 Eastman E1OM
-                                소비자가 1,490,000원
-                            </li>
-                            <li>
-                                <span>판매가</span> <span>798,000</span>원
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="prod_buy">
-                    <td class="prod_addList">
-                        ADD LIST
-                    </td>
-                    <td class="prod_buyNow">
-                        BUY NOW
-                    </td>
-                </tr>
-            </table>
+            <div class="prod_name">
+                Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타
+            </div>
+            <div class="prod_spac">
+                <ul>
+                    <li>Eastman의 엔트리급 올솔리드 모델</li>
+                    <li>OM 바디</li>
+                    <li>상판 : Solid Sitka Sprucer</li>
+                    <li>측후판 : Solid Sapelel</li>
+                    <li>지판 : Ebony</li>
+                    <li>44.5mm 너트, 빈티지 오픈기어 헤드머신</li>
+                </ul>
+            </div>
+            <div class="prod_info">
+                <ul>
+                    <li>원산지 해외</li>
+                    <li>브랜드 Eastman</li>
+                    <li>모델 Eastman E1OM</li>
+                    <li>소비자가 <del>1,490,000</del>원</li>
+                    <li>
+                        <span>판매가</span> <span>798,000</span>원
+                    </li>
+                </ul>
+            </div>
+            <div class="prod_buy">
+                <a href="#" class="prod_addList">
+                    ADD LIST
+                </a>
+                <a href="#" class="prod_buyNow">
+                    BUY NOW
+                </a>
+            </div>
         </div>
     </section>
     <section class="prod_description">
         <table class="prod_tab">
             <tr>
-                <td class="prod_description_tab">
+                <td></td>
+                <td class="prod_description_tab" style="font-weight: 600;">
                     상품정보
                 </td>
                 <td class="prod_review_tab">
@@ -110,9 +116,10 @@
                 <td class="prod_shipping_tab">
                     배송안내
                 </td>
-                <td class="prod_Q&A_tab">
+                <td class="prod_QnA_tab">
                     Q&A
                 </td>
+                <td></td>
             </tr>
         </table>
         <div class="prod_description_img">
@@ -122,65 +129,73 @@
     <section class="prod_review">
         <table class="prod_tab">
             <tr>
+                <td></td>
                 <td class="prod_description_tab">
                     상품정보
                 </td>
-                <td class="prod_review_tab">
+                <td class="prod_review_tab" style="font-weight: 600;">
                     구매후기
                 </td>
                 <td class="prod_shipping_tab">
                     배송안내
                 </td>
-                <td class="prod_Q&A_tab">
+                <td class="prod_QnA_tab">
                     Q&A
                 </td>
+                <td></td>
             </tr>
         </table>
         <table>
-            <tr>
-                <th>WRITE</th>
-                <th>MYLIST</th>
+            <tr class="prod_review_write">
+                <td></td>
+                <td><a href="#">WRITE</a></td>
+                <td><a href="#">MYLIST</a></td>
             </tr>
             <tr>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <td colspan="3">
+                    <ul class="prod_review_list">
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                    </ul>
+                </td>
             </tr>
         </table>
     </section>
     <section class="prod_shipping">
         <table class="prod_tab">
             <tr>
+                <td></td>
                 <td class="prod_description_tab">
                     상품정보
                 </td>
                 <td class="prod_review_tab">
                     구매후기
                 </td>
-                <td class="prod_shipping_tab">
+                <td class="prod_shipping_tab" style="font-weight: 600;">
                     배송안내
                 </td>
-                <td class="prod_Q&A_tab">
+                <td class="prod_QnA_tab">
                     Q&A
                 </td>
+                <td></td>
             </tr>
         </table>
-        <div>
-            <img src="../../img/shpping.png" alt="">
+        <div class="prod_shipping_img">
+            <img src="../../img/shpping.png" alt="" width="860px">
         </div>
     </section>
-    <section class="prod_Q&A">
+    <section class="prod_QnA">
         <table class="prod_tab">
             <tr>
+                <td></td>
                 <td class="prod_description_tab">
                     상품정보
                 </td>
@@ -190,29 +205,33 @@
                 <td class="prod_shipping_tab">
                     배송안내
                 </td>
-                <td class="prod_Q&A_tab">
+                <td class="prod_QnA_tab" style="font-weight: 600;">
                     Q&A
                 </td>
+                <td></td>
             </tr>
         </table>
         <table>
-            <tr>
-                <th>WRITE</th>
-                <th>MYLIST</th>
+            <tr class="prod_QnA_tab_write">
+                <td></td>
+                <td><a href="#">WRITE</a></td>
+                <td><a href="#">MYLIST</a></td>
             </tr>
             <tr>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <td colspan="3">
+                    <ul class="prod_QnA_tab_list">
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                    </ul>
+                </td>
             </tr>
         </table>
     </section>
@@ -220,11 +239,11 @@
         <div class="container_f">
             <ul class="footer_list">
                 <li class="terms_f">
-                <a href="#" class="footer_tt_1">이용약관</a>
-                |
-                <a href="#" class="footer_tt_2">개인정보취급방침</a>
-                |
-                <a href="#" class="footer_tt_3">이용안내</a>
+                    <a href="#" class="footer_tt_1">이용약관</a>
+                    |
+                    <a href="#" class="footer_tt_2">개인정보취급방침</a>
+                    |
+                    <a href="#" class="footer_tt_3">이용안내</a>
                 </li>
                 <li class="contact_us_tt">
                     <p>Contact us</p>
