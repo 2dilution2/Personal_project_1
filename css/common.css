@@ -114,6 +114,16 @@ body {
     font-weight: 300;
 }
 
+.sort {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.prod_list_num {
+    font-size: 30px;    
+    font-weight: 300;
+}
+
 /* 헤더 */
 header {
     position: relative;
@@ -483,7 +493,8 @@ footer {
     align-items: center;
 }
 
-.login_input_tt tr td input {
+.login_input_tt tr td input[type="text"],
+.login_input_tt tr td input[type="password"] {
     width: 560px;
     height: 50px;
     background-color: #F2F2F2;
@@ -574,7 +585,7 @@ footer {
 }
 
 #member_phone_mid,
-#member_phone_end{
+#member_phone_end {
     width: 200px;
 }
 
@@ -634,4 +645,57 @@ footer {
 
 .social_join ul li:first-child {
     padding-left: 0;
+}
+
+/* product list page */
+.thumbnail>a>img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.spac {
+    width: 400px;
+
+}
+
+.description {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.product {
+    margin-top: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+}
+
+.sort {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    align-self: flex-end;
+}
+
+.prodList {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    grid-gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.prod_list_num {
+    margin-top: 50px;
+    display: flex;
+}
+
+.prod_list_num li {
+    margin-left: 5px;
+    color: #505050;
 }
