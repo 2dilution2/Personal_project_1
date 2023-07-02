@@ -82,6 +82,26 @@ body {
     font-size: 30px;
 }
 
+.login_input_tt {
+    font-size: 30px;
+}
+
+.login_btn {
+    font-size: 40px;
+}
+
+.not_login {
+    font-size: 20px;
+    font-family: Lexend;
+    font-weight: 400;
+}
+
+.login_btn {
+    font-size: 40px;
+    font-family: Lexend Exa;
+    font-weight: 400;
+}
+
 /* 헤더 */
 header {
     position: relative;
@@ -425,4 +445,75 @@ footer {
     size: 45%;
 }
 
+/* common page */
+.bar {
+    width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #505050;
+    padding-top: 63.5px;
+}
+
+.head_tt {
+    padding: 15px;
+}
+
 /* login page */
+.login_input {
+    padding-top: 30px;
+    text-align: center;
+    width: 690px;
+    align-items: center;
+}
+
+.login_input_tt {
+    width: 690px;
+    align-items: center;
+}
+
+.login_input_tt tr td input {
+    width: 560px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border: 0px;
+    margin-top: 34px;
+}
+
+.login_btn {
+    width: 360px;
+    height: 65px;
+    background-color: #D9D9D9;
+    margin: 75px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not_login {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.not_login li,
+.not_login li a {
+    color: #979797;
+}
+
+.social_login ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.social_login ul li {
+    padding-left: 90px;
+}
+
+.social_login ul li:first-child {
+  padding-left: 0;
+}
+
+/* join page */
