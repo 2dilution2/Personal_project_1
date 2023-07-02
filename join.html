@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <title>Acoustic</title>
 </head>
 <body>
     <header>
@@ -30,11 +31,10 @@
     </header>
     <div class="bar">
         <h2 class="head_tt">Join</h2>
-        <hr>
     </div>
-    <section class="join input">
+    <section class="join_input">
         <table>
-            <tr>
+            <tr class="join_id">
                 <th>
                     아이디
                     <img src="img/ico_required.gif" alt="필수입력">
@@ -44,7 +44,7 @@
                     <input type="button" value="중복확인">
                 </td>
             </tr>
-            <tr>
+            <tr class="join_pw">
                 <th>
                     비밀번호
                     <img src="img/ico_required.gif" alt="필수입력">
@@ -53,7 +53,7 @@
                     <input id="member_pw" type="password">
                 </td>
             </tr>
-            <tr>
+            <tr class="join_pw_ck">
                 <th>
                     비밀번호 확인
                     <img src="img/ico_required.gif" alt="필수입력">
@@ -62,7 +62,7 @@
                     <input id="member_pw_check" type="password">
                 </td>
             </tr>
-            <tr>
+            <tr class="join_name">
                 <th>
                     이름
                     <img src="img/ico_required.gif" alt="필수입력">
@@ -71,13 +71,13 @@
                     <input id="member_name" type="text">
                 </td>
             </tr>
-            <tr>
+            <tr class="join_num">
                 <th>
                     휴대전화
                     <img src="img/ico_required.gif" alt="필수입력">
                 </th>
                 <td>
-                    <select name="member_phone" id="member_phone st">
+                    <select name="member_phone" id="member_phone_st">
                         <option>010</option>
                         <option>011</option>
                         <option>017</option>
@@ -85,19 +85,19 @@
                         <option>070</option>
                     </select>
                     -
-                    <input id="member_phone mid" type="text">
+                    <input id="member_phone_mid" type="text">
                     -
-                    <input id="member_phone end" type="text">
+                    <input id="member_phone_end" type="text">
                 </td>
             </tr>
-            <tr>
+            <tr class="join_mail">
                 <th>
                     이메일
                 </th>
                 <td>
                     <input id="member_email" type="text">
                     @
-                    <select name="member_email_domain" id="member_email domain">
+                    <select name="member_email_domain" id="member_email_domain">
                         <option>gmail.com</option>
                         <option>naver.com</option>
                         <option>kakao.com</option>
@@ -106,18 +106,19 @@
                 </td>
             </tr>
         </table>
-        <hr>
         <div class="agree">
-            <input type="checkbox" name="terms_of_use" id="terms">
-            [필수] 이용약관 동의
+            <div>
+                <input type="checkbox" name="terms_of_use" id="terms">
+                [필수] 이용약관 동의
+            </div>
+            <div>
+                <input type="checkbox" name="consent_to_collection_and_use" id="consent">
+                [필수] 개인정보 수집 이용 동의
+            </div>
         </div>
-        <div class="agree">
-            <input type="checkbox" name="consent_to_collection_and_use" id="consent">
-            [필수] 개인정보 수집 이용 동의
-        </div>
-        <div class="join_btn">
-            <a href="#none" class="bk_btn_2" onclick="">Join</a>
-        </div>
+            <div class="join_btn">
+                <a href="#none" class="bk_btn_2" onclick="">Join</a>
+            </div>
         <div class="social_join">
             <ul>
                 <li>

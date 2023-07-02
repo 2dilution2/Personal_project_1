@@ -102,6 +102,18 @@ body {
     font-weight: 400;
 }
 
+.agree {
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.join_input {
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 300;
+}
+
 /* 헤더 */
 header {
     position: relative;
@@ -502,7 +514,7 @@ footer {
     color: #979797;
 }
 
-.social_login ul{
+.social_login ul {
     display: flex;
     justify-content: center;
     padding-top: 60px;
@@ -513,7 +525,113 @@ footer {
 }
 
 .social_login ul li:first-child {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 /* join page */
+
+.join_input {
+    width: 820px;
+    margin-top: 105px;
+}
+
+.join_input table {
+    border-bottom: 1px solid #505050;
+}
+
+.join_input tr th {
+    width: 220px;
+    height: 60px;
+    text-align: left;
+}
+
+.join_input tr td {
+    width: auto;
+}
+
+.join_input tr td input {
+    width: auto;
+}
+
+#member_id,
+#member_pw,
+#member_pw_check,
+#member_name,
+#member_phone_mid,
+#member_phone_end,
+#member_email {
+    margin-bottom: 34px;
+    background-color: #F2F2F2;
+    border: 0px;
+    height: 50px;
+    padding: 0px;
+}
+
+#member_pw,
+#member_pw_check,
+#member_name {
+    width: 575px;
+}
+
+#member_phone_mid,
+#member_phone_end{
+    width: 200px;
+}
+
+#member_email {
+    width: 280px;
+}
+
+.join_id td input:nth-of-type(2) {
+    margin-left: 10px;
+    width: 150px;
+    height: 50px;
+    border: 0px;
+    background-color: #D9D9D9;
+}
+
+#member_phone_st {
+    width: 115px;
+    text-align: center;
+    border: 0px;
+    background-color: #F2F2F2;
+    height: 50px;
+    padding: 0px;
+}
+
+#member_email_domain {
+    width: 250px;
+    text-align: center;
+    border: 0px;
+    background-color: #F2F2F2;
+    height: 50px;
+    padding: 0px;
+}
+
+.agree {
+    margin: 48px auto 0;
+}
+
+.join_btn {
+    width: 460px;
+    height: 65px;
+    background-color: #D9D9D9;
+    margin: 75px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_join ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.social_join ul li {
+    padding-left: 90px;
+}
+
+.social_join ul li:first-child {
+    padding-left: 0;
+}
