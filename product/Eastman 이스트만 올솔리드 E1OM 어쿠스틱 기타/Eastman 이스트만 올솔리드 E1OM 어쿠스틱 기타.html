@@ -6,22 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/common.css">
     <title>Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타</title>
-    <script>
-        // 모든 썸네일 이미지를 선택한다.
-        const thumbnails = document.querySelectorAll('.thumbImg');
-
-        // 썸네일 이미지에 마우스 오버 이벤트 리스너를 추가한다.
-        thumbnails.forEach((thumbnail) => {
-            thumbnail.addEventListener('mouseover', function () {
-                // 메인 이미지를 썸네일 이미지로 변경한다.
-                const mainImage = document.querySelector('.bigImg');
-                mainImage.src = this.src;
-
-                // 선택한 썸네일 이미지의 alt 속성을 메인 이미지의 alt 속성으로 변경한다.
-                mainImage.alt = this.alt;
-            });
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -67,6 +52,19 @@
                     </li>
                 </ul>
             </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const thumbnails = document.querySelectorAll('.thumbImg');
+                  const mainImage = document.querySelector('.bigImg');
+                  
+                  thumbnails.forEach(thumb => {
+                    thumb.addEventListener('mouseover', () => {
+                      mainImage.src = thumb.src;
+                      mainImage.alt = thumb.alt;
+                    });
+                  });
+                });
+            </script>
         </div>
         <div class="prod_desc">
             <div class="prod_name">
