@@ -8,7 +8,27 @@
     <title>Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타</title>
     
 </head>
-
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabLinks = document.querySelectorAll(".prod_tab td[data-target]");
+    
+      tabLinks.forEach((link) => {
+        link.style.cursor = "pointer";
+        link.addEventListener("click", (event) => {
+          const targetSelector = link.getAttribute("data-target");
+          const targetElement = document.querySelector(targetSelector);
+    
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+    </script>
+    
 <body>
     <header>
         <div class="container_h">
@@ -104,22 +124,15 @@
     <section class="prod_description">
         <table class="prod_tab">
             <tr>
-                <td></td>
-                <td class="prod_description_tab" style="font-weight: 600;">
-                    상품정보
-                </td>
-                <td class="prod_review_tab">
-                    구매후기
-                </td>
-                <td class="prod_shipping_tab">
-                    배송안내
-                </td>
-                <td class="prod_QnA_tab">
-                    Q&A
-                </td>
-                <td></td>
+              <td></td>
+              <td class="prod_description_tab active" data-target=".prod_description">상품정보</td>
+              <td class="prod_review_tab" data-target=".prod_review">구매후기</td>
+              <td class="prod_shipping_tab" data-target=".prod_shipping">배송안내</td>
+              <td class="prod_QnA_tab" data-target=".prod_QnA">Q&A</td>
+              <td></td>
             </tr>
-        </table>
+          </table>
+          
         <div class="prod_description_img">
             <img src="Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타_desc.jpg" alt="Eastman 이스트만 올솔리드 E1OM 어쿠스틱 기타 상품정보">
         </div>
@@ -127,22 +140,15 @@
     <section class="prod_review">
         <table class="prod_tab">
             <tr>
-                <td></td>
-                <td class="prod_description_tab">
-                    상품정보
-                </td>
-                <td class="prod_review_tab" style="font-weight: 600;">
-                    구매후기
-                </td>
-                <td class="prod_shipping_tab">
-                    배송안내
-                </td>
-                <td class="prod_QnA_tab">
-                    Q&A
-                </td>
-                <td></td>
+              <td></td>
+              <td class="prod_description_tab" data-target=".prod_description">상품정보</td>
+              <td class="prod_review_tab active" data-target=".prod_review">구매후기</td>
+              <td class="prod_shipping_tab" data-target=".prod_shipping">배송안내</td>
+              <td class="prod_QnA_tab" data-target=".prod_QnA">Q&A</td>
+              <td></td>
             </tr>
-        </table>
+          </table>
+          
         <table>
             <tr class="prod_review_write">
                 <td></td>
@@ -170,22 +176,15 @@
     <section class="prod_shipping">
         <table class="prod_tab">
             <tr>
-                <td></td>
-                <td class="prod_description_tab">
-                    상품정보
-                </td>
-                <td class="prod_review_tab">
-                    구매후기
-                </td>
-                <td class="prod_shipping_tab" style="font-weight: 600;">
-                    배송안내
-                </td>
-                <td class="prod_QnA_tab">
-                    Q&A
-                </td>
-                <td></td>
+              <td></td>
+              <td class="prod_description_tab" data-target=".prod_description">상품정보</td>
+              <td class="prod_review_tab" data-target=".prod_review">구매후기</td>
+              <td class="prod_shipping_tab active" data-target=".prod_shipping">배송안내</td>
+              <td class="prod_QnA_tab" data-target=".prod_QnA">Q&A</td>
+              <td></td>
             </tr>
-        </table>
+          </table>
+          
         <div class="prod_shipping_img">
             <img src="../../img/shpping.png" alt="" width="860px">
         </div>
@@ -193,22 +192,15 @@
     <section class="prod_QnA">
         <table class="prod_tab">
             <tr>
-                <td></td>
-                <td class="prod_description_tab">
-                    상품정보
-                </td>
-                <td class="prod_review_tab">
-                    구매후기
-                </td>
-                <td class="prod_shipping_tab">
-                    배송안내
-                </td>
-                <td class="prod_QnA_tab" style="font-weight: 600;">
-                    Q&A
-                </td>
-                <td></td>
+              <td></td>
+              <td class="prod_description_tab" data-target=".prod_description">상품정보</td>
+              <td class="prod_review_tab" data-target=".prod_review">구매후기</td>
+              <td class="prod_shipping_tab" data-target=".prod_shipping">배송안내</td>
+              <td class="prod_QnA_tab active" data-target=".prod_QnA">Q&A</td>
+              <td></td>
             </tr>
-        </table>
+          </table>
+          
         <table>
             <tr class="prod_QnA_tab_write">
                 <td></td>

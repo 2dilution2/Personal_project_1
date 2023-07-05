@@ -163,12 +163,15 @@ body {
 
 /* 헤더 */
 header {
-    position: relative;
-    width: 1920px auto;
-    flex-shrink: 0;
-    padding: 5px;
-    border-bottom: 1px solid gray;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+  align-items: center;
 }
 
 .container_h {
@@ -203,6 +206,11 @@ header {
 
 .hd_member_tt a {
     padding-left: 43px;
+}
+
+/* body */
+body {
+    padding-top: 116px;
 }
 
 /* footer */
@@ -924,4 +932,15 @@ section.product {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.active {
+    font-weight: 600;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.prod_tab td:not(.active){
+    border-bottom: 2px solid #000;
 }
