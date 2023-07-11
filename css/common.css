@@ -163,15 +163,15 @@ body {
 
 /* 헤더 */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
-  padding: 5px;
-  border-bottom: 1px solid gray;
-  align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    align-items: center;
 }
 
 .container_h {
@@ -941,6 +941,6 @@ section.product {
     border-right: 2px solid #000;
 }
 
-.prod_tab td:not(.active){
+.prod_tab td:not(.active) {
     border-bottom: 2px solid #000;
 }
